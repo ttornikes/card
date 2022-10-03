@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&family=Space+Grotesk:wght@500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="main">
+        
+
+        <div class="main__wrapper container flex ">
+            
+            <div class="wrapper__card ">
+                <div class="card__frontside flex">
+                    
+                    <div class="frontside__items">
+                        <img src="./images/bg-card-front.png" alt="bg-card-front">
+
+                        <div class="frontside__item">   
+                            <div class="circle flex">
+                                <span class="bg__circle"></span>
+                                <span class="sm__circle"></span>
+                            </div>
+
+                            <p id="nnn" class="number">9591 0043 7892 0102</p>
+
+                            <div class="costumer flex">
+                                <p class="name">FELICIA LEARY</p>
+
+                                <P class="mmyy">09/00</P>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__backside">
+                        <img src="./images/bg-card-back.png" alt="bg-card-back">
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div class="wrapper__privecy flex ">
+                <div class="privacy__inner flex">
+                    <label for="text" > CARDHOLDER NAME</label>
+                    <input type="text" name="name" id="name" placeholder="e.g. jane applessed">
+                </div>
+                <div class="privacy__inner flex">
+                    <label for="text" >CARD NUMBER</label>
+                    <input type="text" name="number" id="number"  placeholder="e.g. 1234 5678 9000 0000">
+                    <span id="falseName" >--</span>
+                </div>
+                <div class="privacy__inner exp flex">
+                    <div class="inner__label">
+
+                        <label for="quantity">EXP. DATE (MM/YY)</label>
+
+                        <div class="value">
+                            <input class="exp__input" type="text" id="mm" name="quantity" min="0" max="12" placeholder="MM">
+                            <input type="text" id="yy" name="quantity" min="1" max="31" placeholder="YY">
+                           
+                        </div>
+                        
+                    </div>
+                    <div class="inner__value flex ">
+                        <label class="cvcl" for="quantity">CVC</label>
+                       
+                        <input class="cvc" type="text" id="cvc" name="quantity" min="1" max="999" placeholder="cvc">
+                        
+                    </div>
+                 
+                </div>
+                <span id="falseEach">--</span>
+
+
+                <div class="privacy__inner  button">
+                    <input type="button" value="Confirm" id="button" onclick="confirmClick()" >
+                </div> 
+
+             </div>
+
+        </div>
+    </section>
+    <script defer src="./main.js" defer></script>
+</body>
+</html>
